@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
+<title>New Beginnings | λ spyhoodle.me</title>
+<meta name="title" content="New Beginnings" />
+<meta name="description" content="My website has been through many versions. Until recently it was even completely offline for a while.
+I had to self-host it on a Raspberry Pi 4 because Synapse1 needed to use the domain name as well.
+Then I had the port forwarding off for a while because I wasn&rsquo;t ready to start it up.
+Now it&rsquo;s back to running on GitHub Pages2 again.
+I wasn&rsquo;t happy with any of the previous versions of the website I&rsquo;d produced.
+They had quite poor layouts and designs, and I didn&rsquo;t feel like they expressed myself correctly.
+I also tried experimenting with Next.js3, but I decided I wanted to stick to a single minimalistic site that also included my blog.
+So I&rsquo;ve gone back to using the static site generator Hugo4 and I set up a theme that suits me best." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="http://localhost:1313/new-beginnings/">
+  <meta property="og:site_name" content="λ spyhoodle.me">
+  <meta property="og:title" content="New Beginnings">
+  <meta property="og:description" content="My website has been through many versions. Until recently it was even completely offline for a while. I had to self-host it on a Raspberry Pi 4 because Synapse1 needed to use the domain name as well. Then I had the port forwarding off for a while because I wasn’t ready to start it up. Now it’s back to running on GitHub Pages2 again.
+I wasn’t happy with any of the previous versions of the website I’d produced. They had quite poor layouts and designs, and I didn’t feel like they expressed myself correctly. I also tried experimenting with Next.js3, but I decided I wanted to stick to a single minimalistic site that also included my blog. So I’ve gone back to using the static site generator Hugo4 and I set up a theme that suits me best.">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-12-30T11:10:09+00:00">
+    <meta property="article:modified_time" content="2025-12-30T11:10:09+00:00">
+    <meta property="og:image" content="http://localhost:1313/images/share.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
+  <meta name="twitter:title" content="New Beginnings">
+  <meta name="twitter:description" content="My website has been through many versions. Until recently it was even completely offline for a while. I had to self-host it on a Raspberry Pi 4 because Synapse1 needed to use the domain name as well. Then I had the port forwarding off for a while because I wasn’t ready to start it up. Now it’s back to running on GitHub Pages2 again.
+I wasn’t happy with any of the previous versions of the website I’d produced. They had quite poor layouts and designs, and I didn’t feel like they expressed myself correctly. I also tried experimenting with Next.js3, but I decided I wanted to stick to a single minimalistic site that also included my blog. So I’ve gone back to using the static site generator Hugo4 and I set up a theme that suits me best.">
+
+
+
+
+  <meta itemprop="name" content="New Beginnings">
+  <meta itemprop="description" content="My website has been through many versions. Until recently it was even completely offline for a while. I had to self-host it on a Raspberry Pi 4 because Synapse1 needed to use the domain name as well. Then I had the port forwarding off for a while because I wasn’t ready to start it up. Now it’s back to running on GitHub Pages2 again.
+I wasn’t happy with any of the previous versions of the website I’d produced. They had quite poor layouts and designs, and I didn’t feel like they expressed myself correctly. I also tried experimenting with Next.js3, but I decided I wanted to stick to a single minimalistic site that also included my blog. So I’ve gone back to using the static site generator Hugo4 and I set up a theme that suits me best.">
+  <meta itemprop="datePublished" content="2025-12-30T11:10:09+00:00">
+  <meta itemprop="dateModified" content="2025-12-30T11:10:09+00:00">
+  <meta itemprop="wordCount" content="244">
+  <meta itemprop="image" content="http://localhost:1313/images/share.png">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --width: 720px;
+    --font-main: Verdana, sans-serif;
+    --font-secondary: Verdana, sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color: #8b6fcb;
+    --blockquote-color: #222;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #01242e;
+      --heading-color: #eee;
+      --text-color: #ddd;
+      --link-color: #8cc2dd;
+      --visited-color: #8b6fcb;
+      --blockquote-color: #ccc;
+    }
+  }
+
+  body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+
+  strong,
+  b {
+    color: var(--heading-color);
+  }
+
+  button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  time {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  main {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    font-family: monospace;
+    padding: 2px;
+    border-radius: 3px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--blockquote-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .inline {
+    width: auto !important;
+  }
+
+  .highlight,
+  .code {
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--visited-color);
+  }
+
+</style>
+<style>
+  :root {
+    --width: 720px;
+    --font-main: monospace, sans-serif;
+    --font-secondary: monospace, sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color: #8b6fcb;
+    --blockquote-color: #222;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #000000;
+      --heading-color: #eee;
+      --text-color: #ddd;
+      --link-color: #8cc2dd;
+      --visited-color: #8b6fcb;
+      --blockquote-color: #ccc;
+    }
+  }
+
+  body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+
+  strong,
+  b {
+    color: var(--heading-color);
+  }
+
+  button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  time {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  main {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    font-family: monospace;
+    padding: 2px;
+    border-radius: 3px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--blockquote-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .inline {
+    width: auto !important;
+  }
+
+  .highlight,
+  .code {
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--visited-color);
+  }
+
+   
+  .bear {
+    margin: 1rem 0 1rem 2ch;
+  }
+</style>
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>λ spyhoodle.me</h2>
+</a>
+<nav>
+<a href="/">Home</a>
+
+<a href="/blog/">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>New Beginnings</h1>
+<p>
+  <i>
+    <time datetime='2025-12-30'>
+      2025-12-30
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>My website has been through many versions. Until recently it was even completely offline for a while.
+I had to self-host it on a Raspberry Pi 4 because Synapse<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> needed to use the domain name as well.
+Then I had the port forwarding off for a while because I wasn&rsquo;t ready to start it up.
+Now it&rsquo;s back to running on GitHub Pages<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> again.</p>
+<p>I wasn&rsquo;t happy with any of the previous versions of the website I&rsquo;d produced.
+They had quite poor layouts and designs, and I didn&rsquo;t feel like they expressed myself correctly.
+I also tried experimenting with Next.js<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, but I decided I wanted to stick to a single minimalistic site that also included my blog.
+So I&rsquo;ve gone back to using the static site generator Hugo<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> and I set up a theme that suits me best.</p>
+<p>I don&rsquo;t think I&rsquo;ll be changing my site to a new version anytime soon&mdash;this design actually feels &ldquo;right&rdquo;.
+It&rsquo;s like the final iteration of all of my previous versions.</p>
+<p>Identity is a tricky thing. You want to do your best work and make something that expresses yourself, but you can&rsquo;t even be sure what yourself is.
+My identity has changed a lot, but I&rsquo;m finally feeling like I&rsquo;m reaching the point of understanding myself more.</p>
+<p class="bear">
+  <span class="bear__label">ʕ•ᴥ•ʔ:</span>
+  <span class="bear__body">Care for yourself and yourself will care for you.</span>
+</p>
+
+<p>There&rsquo;s a hell of a lot that I can write about now. Have a Happy New Year&mdash;Maddie.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://github.com/element-hq/synapse">https://github.com/element-hq/synapse</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://docs.github.com/en/pages/">https://docs.github.com/en/pages/</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://nextjs.org/">https://nextjs.org/</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://gohugo.io/">https://gohugo.io/</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+</content>
+
+<div style="font-size:0.8em;display:flex;gap:16px;justify-content:center;">
+  <p>
+    
+        <strike>
+          &lt;&lt; Previous Post</strike>
+            
+  </p>
+  <p>|</p>
+  <p>
+    
+    <strike>Next Post >></strike>
+    
+  </p>
+</div>
+
+
+<p>
+  
+</p>
+
+  </main>
+  <footer><p>
+  Made with <a href="https://github.com/janraasch/hugo-bearblog">ʕ•ᴥ•ʔ</a> by
+  <a href="https://github.com/SpyHoodle">Maddie</a> · v6.0.0
+</p>
+</footer>
+
+  
+</body>
+
+</html>
