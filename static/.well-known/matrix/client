@@ -5,5 +5,8 @@
       "type": "livekit",
       "livekit_service_url": "https://jwt.matrixrtc.spyhoodle.me"
     }
-  ]
+  ],
+  "org.matrix.msc2965.authentication": {
+    "issuer": "https://auth.spyhoodle.me"
+  }
 }
